@@ -1,0 +1,9 @@
+<h1>Drivers index</h1>
+<ul>
+    <% @users.each do |user| %>
+        <li><%= user.username%></li>
+        <li><%= user.email%></li>
+        <hr>
+    <% end %>
+</ul>
+<%= link_to "<< Back to User new", new_user_path %>
