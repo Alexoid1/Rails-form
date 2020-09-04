@@ -8,20 +8,18 @@
     <input type="email" id="email" name="user[email]"><br><br>
     <label for="password">Paassword:</label>
     <input type="password" id="password" name="user[password]"><br><br>    
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token >
     <input type="submit" value="Submit">
 </form> %>
 
-<%= form_tag(url: "/users", method: "get") do %>
-    <%= label_tag(:username, 'Username:') %>
-    <%= text_field_tag(:username) %>
-
-    <%= label_tag(:email, 'Email:') %>
-    <%= email_field_tag(:email) %>
-
-    <%= label_tag(:password, 'Password:') %>
-    <%= password_field_tag(:email) %>
-    
-    
-    <%= submit_tag('Submit') %>
+<%= form_for(@user) do |f| %>
+    <ul>
+      <%@user.errors.full_messages.each do |error| %>
+      <li><%= error%></li>
+      <%end%>
+    </ul>
+    Your username here: <%= f.text_field :username %><br/><br/>
+    Email : <%= f.email_field :email, placeholder: "example@example.com" %><br/><br/>
+    Password : <%= f.password_field :password %><br/><br/>
+    <%= f.submit %>
 <% end %>
