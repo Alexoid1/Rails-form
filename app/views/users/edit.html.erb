@@ -1,12 +1,13 @@
-<h1>Edit</h1>
-<%= form_for(@user) do |f| %>
-    <ul>
-      <%@user.errors.full_messages.each do |error| %>
-      <li><%= error%></li>
-      <%end%>
-    </ul>
-    Your username here: <%= f.text_field :username %><br/><br/>
-    Email : <%= f.email_field :email, placeholder: "example@example.com" %><br/><br/>
-    Password : <%= f.password_field :password %><br/><br/>
-    <%= f.submit %>
-<% end %>
+<h2>Edit the <%= @user.username %> profile</h2>
+
+<form accept-charset="UTF-8" action="/users"  method="patch">
+    <label for="username">User name:</label>
+    <input type="text" id="username" name="user[username]" value="<%= @user.username %>"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="user[email]" value="<%= @user.email %>"><br><br>
+    <label for="password">Paassword:</label>
+    <input type="password" id="password" name="user[password]" value="<%= @user.password %>"><br><br>    
+    
+    <input type="submit" value="Update">
+</form> 
+<a href="/users">User list</a>
