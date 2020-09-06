@@ -12,13 +12,6 @@
 - Fill the User's form.
 - Enjoy it!
 
-![screenshot](./img/image_users.png)
-![screenshot](./img/image_post.png)
-![screenshot](./img/image_comment.png)
-
-
-
-
 
 ## Built With
 
