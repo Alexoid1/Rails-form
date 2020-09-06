@@ -1,4 +1,9 @@
 <h2>Edit the <%= @user.username %> profile</h2>
+<ul>
+      <%@user.errors.full_messages.each do |error| %>
+      <li><%= error%></li>
+      <%end%>
+</ul>
 
 <form accept-charset="UTF-8" action="/users/<%= @user.id %>"  method="post">
 
