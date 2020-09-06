@@ -1,21 +1,15 @@
 # Micro-reddit 🚀 
 
-> In this project we practiced "Active Record" which "is the M in MVC - the model- which is the layer of the system responsible for representing business data and logic." (https://guides.rubyonrails.org/active_record_basics.html) of Ruby on Rails Framework. 
+> In this project we learn about the controllers in rails an every HTTP verb and how the routes for every verb has to be set. 
 
-> Micro-reddit is the name of our small application quite similar to Reddit (https://www.reddit.com/). 
 
-## Steps 
+## Getting Started
+- Go to (https://github.com/Alexoid1/Rails-form) and have a look around.
 - Open your Terminal.
+- Clone repo
 - Go to the project's root
-- Open rails Console.
-- Enable Hirb Gem.
-- Create new User.
-- Fill the User's attributes.
-- Save user.
-- Create a Post (remember to fill the id of the user)
-- Save post.
-- Create a Comment (remember to fill with the id of user and id of the post)
-- Save comment.
+- Start server (rails server).
+- Fill the User's form.
 - Enjoy it!
 
 ![screenshot](./img/image_users.png)
@@ -30,23 +24,16 @@
 
 - Ruby on Rails
 
-## Getting Started
-
-
-- Go to (https://github.com/JasemDuncan/micro-reddit) and have a look around.
-- Download repo
-- On terminal cd repo folder
-- Terminal type (rails console)
 
 ### Prerequisites
 
 - Browser
 - Internet
-- Download the code from repository (https://github.com/JasemDuncan/micro-reddit)
+- Download the code from repository (https://github.com/Alexoid1/Rails-form)
 
 ## Credit
 
-- Odin project (https://www.theodinproject.com/lessons/building-with-active-record-ruby-on-rails)
+- Odin project (https://www.theodinproject.com/lessons/forms)
 
 ## Authors
 
