@@ -2,6 +2,9 @@
 
 > In this project we learn about the controllers in rails an every HTTP verb and how the routes for every verb has to be set. 
 
+![screenshot](./img/new.png)
+
+![screenshot](./img/users.png)
 
 ## Getting Started
 - Go to (https://github.com/Alexoid1/Rails-form) and have a look around.
