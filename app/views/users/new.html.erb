@@ -35,6 +35,14 @@
       <p>Your username here: </p><%= f.text_field :username, class:'input' %><br/>
       <p>Email : </p><%= f.email_field :email,class:'input', placeholder: "example@example.com" %><br/>
       <p>Password : </p><%= f.password_field :password, class:'input' %><br/>
+      <p>Address : </p><%= f.text_field :address, class:'input' %><br/>
+      <p>Age : </p><%= f.number_field :age, class:'input' %><br/>
+      <p>Country : </p><%= f.text_field :country, class:'input' %><br/>
       <%= f.submit class:'submit' %>
   <% end %>
 </div>  
+
+<div class='title'>
+    <br/>
+    <%= link_to "Go to Users path >>", users_path %>
+</div>

@@ -1,3 +1,10 @@
-<h2>Profile of <%= @user.username %> </h2>
-<h2>Your email of <%= @user.email %> </h2>
-<hr>
+<h2 class="title">Profile of <%= @user.username %> </h2>
+<h2 class="title">Your email is <%= @user.email %> </h2>
+<h2 class="title">Your  address is  <%= @user.email %> </h2>
+<h2 class="title">Your age is <%= @user.email %> </h2>
+<h2 class="title">Your country is  <%= @user.email %> </h2>
+
+
+<div class='title'>
+    <%= link_to "<< Back to Users path", users_path %>
+</div>
