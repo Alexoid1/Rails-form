@@ -12,8 +12,8 @@
 - Clone repo
 - Go to the project's root
 - Start server (rails server).
-- Fill the User's form.
-- Enjoy it!
+- Fill the Users form.
+
 
 
 ## Built With
