@@ -18,6 +18,14 @@
     <label for="password">Paassword:</label>
     <input class='input' type="password" id="password" name="user[password]" value="<%= @user.password %>"><br><br>    
     
+    <label for="address">User address:</label>
+    <input class='input' id='address' type="text" name="user[address]" value="<%= @user.address %>" /><br><br>    
+    <label for="age">User age:</label>
+    <input class='input' id='age' type="number" name="user[age]" value="<%= @user.age %>" /><br><br>    
+    <label for="country">User country:</label>
+    <input class='input' id='country' type="text" name="user[country]" value="<%= @user.country %>" />
     <input type="submit" class='submit' value="Update">
 </form> 
-<a href="/users">User list</a>
+<div class='title'>
+    <%= link_to "<< Back to Users path", users_path %>
+</div>
