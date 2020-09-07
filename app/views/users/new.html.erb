@@ -1,0 +1,40 @@
+<h1 class='title'>Re-form</h1>
+
+
+<%# <form accept-charset="UTF-8" action="users_path"  method="post">
+    <label for="username">User name:</label>
+    <input type="text" id="username" name="user[username]"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="user[email]"><br><br>
+    <label for="password">Paassword:</label>
+    <input type="password" id="password" name="user[password]"><br><br>    
+    <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token >
+    <input type="submit" value="Submit">
+</form> %>  
+
+
+<%# <%= form_tag users_path do %>
+<%# <%= label_tag :email, 'Email: ' %>
+<%# <%= email_field_tag :email  %>
+<%# <%= label_tag :username, "Username: " %>
+<%# <%= text_field_tag :username  %>
+<%# <%= label_tag :password, "Password: " %>
+<%# <%= password_field_tag :password  %>
+<%# <%= label_tag :password_confirmation, "Confirm Password: " %>
+<%# <%= password_field_tag :password_confirmation  %>
+<%# <%= submit_tag "Sign Up" %>  
+
+
+<div class="form">
+  <%= form_for(@user) do |f| %>
+      <ul>
+        <%@user.errors.full_messages.each do |error| %>
+        <li><%= error%></li>
+        <%end%>
+      </ul>
+      <p>Your username here: </p><%= f.text_field :username, class:'input' %><br/>
+      <p>Email : </p><%= f.email_field :email,class:'input', placeholder: "example@example.com" %><br/>
+      <p>Password : </p><%= f.password_field :password, class:'input' %><br/>
+      <%= f.submit class:'submit' %>
+  <% end %>
+</div>  

@@ -1,0 +1,107 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background: #29456a;
+  max-width: 1700px;
+}
+
+.title {
+  text-align: center;
+  color: ivory;
+  margin-bottom: 60px;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+.title a {
+  color: ivory;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: ivory;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.form {
+  padding: 30px;
+  width: 500px;
+  background: #e5e1af;
+  margin: auto;
+  border-radius: 10px;
+  border: 8px solid white;
+}
+
+.input {
+  width: 90%;
+  height: 27px;
+  margin: 4px;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+p,
+label {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.submit {
+  display: block;
+  padding: 10px 60px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.box {
+  padding: 30px;
+  width: 300px;
+  background: #e5e1af;
+  margin: auto;
+  border-radius: 10px;
+  border: 8px solid white;
+  margin-bottom: 10px;
+}
+
+.box:hover {
+  transform: scale(1.08);
+}
+
+.ulnot {
+  list-style: none;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+}
+
+.button {
+  width: auto;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(222, 222, 222);
+  margin-top: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button:hover {
+  background: grey;
+  color: white;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
