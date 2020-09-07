@@ -1,6 +1,6 @@
 # Re-former 🚀 
 
-> In this project we learn about the controllers in rails an every HTTP verb and how the routes for every verb has to be set. 
+> This is a user admin interface that create, edit and delete users, The Re-former use forms to get the data from users and store in the database. 
 
 ![screenshot](./img/new.png)
 
