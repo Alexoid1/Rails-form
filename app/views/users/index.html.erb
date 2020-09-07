@@ -1,7 +1,11 @@
 <h1 class='title'>There are <%= @users.count%> Users Stored</h1>
 <ul class='ulnot'>
+
     <% @users.each do |user| %>
         <div class='box'>
+            <div class='image'>
+                
+            </div>       
             <li class='name'><%= user.username%></li>
             <li class='name'><%= user.email%></li>
             <li class='name'><%= user.address%></li>
@@ -12,6 +16,7 @@
                 <a href="/users/<%= user.id %>/edit"><button type='button'class='button'>Edit</button></a>
                 <a href="/users/<%= user.id %>" data-method="delete" data-confirm="Are you sure?"><button type='button' class='button'>Delete</button></a>
             </li>
+
         </div>
         
     <% end %>

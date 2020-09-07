@@ -70,6 +70,20 @@ label {
   margin-bottom: 10px;
 }
 
+.image {
+  padding: 30px;
+  width: 40px;
+  height: 40px;
+  background: #e5e1af;
+  margin: auto;
+  border-radius: 10px;
+  border: 8px solid white;
+  margin-bottom: 10px;  
+  background-image: url("../assets/profile-a0e079d8cef3dd595d41611f0823d155695e4cff5b73555f7b1c20e39c33e75c.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .box:hover {
   transform: scale(1.08);
 }
