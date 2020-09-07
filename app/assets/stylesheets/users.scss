@@ -38,17 +38,18 @@ body {
   margin: 4px;
   font-weight: bolder;
   font-size: 15px;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
-p,label {
+p,
+label {
   font-weight: bolder;
   font-size: 16px;
 }
 
 .submit {
   display: block;
-  padding:10px 60px;
+  padding: 10px 60px;
   margin: auto;
   margin-top: 20px;
   border-radius: 5px;
@@ -80,8 +81,8 @@ p,label {
   height: 30px;
   border: 2px solid black;
   border-radius: 5px;
-  background-color: rgb(222, 222, 222); 
-  margin-top: 10px;     
+  background-color: rgb(222, 222, 222);
+  margin-top: 10px;
 }
 
 .buttonContainer {
@@ -90,19 +91,18 @@ p,label {
   justify-content: space-between;
 }
 
-.button a{
+.button 
+a{
   text-decoration: none;
-  color: black;  
+  color: black;
 }
 
 .button:hover {
   background: grey;
-  color:white;
+  color: white;
 }
 
 .name {
   font-size: 20px;
   font-weight: bold;
 }
-
-
